@@ -1,95 +1,48 @@
 /**
+ * Site background
+ */
+body {
+    background: url(../img/coffee-roasting.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    text-align: center;
+    padding: $spacing-unit*2 0;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+.logo {
+    max-width: 400px;
+}
 
-    .menu-icon {
-        display: none;
-    }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+/**
+ * Site header
+ */
+.home {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 
@@ -98,8 +51,40 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+}
+
+.soc {
+    display: block;
+    list-style: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    a, svg {
+        display: block;
+    }
+
+    a {
+        width: 45px;
+        height: 45px;
+        padding: 5px;
+        border: 3px solid #fff;
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .facebook,
+    .twitter {
+        color: #fff;
+        fill: #fff;
+    }
 }
 
 .footer-heading {
