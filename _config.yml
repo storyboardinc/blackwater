@@ -7,11 +7,11 @@
 
 # Site settings
 title: Blackwater Coffee Co.
-email: info@storyboardsolutions.com
+email: info@blackwatercoffee.ca
 description: > # this means to ignore newlines until "baseurl:"
   We roast and serve delicious coffee in downtown Sarnia, Ontario.
-baseurl: "/blackwater" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "http://www.blackwatercoffee.ca" # the subpath of your site, e.g. /blog
+url: "http://www.blackwatercoffee.ca" # the base hostname & protocol for your site
 twitter_username: blackwaterco
 github_username:  storyboardinc
 
