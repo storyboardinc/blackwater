@@ -52,6 +52,38 @@ body {
     }
 }
 
+.blends {
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: $base-font-size;
+    }
+}
+
+.blend-box {
+    padding: $spacing-unit;
+    background: #000;
+    border: 2px solid #fff;
+    margin-bottom: $spacing-unit/2;
+
+    h3 {
+        font-size: $base-font-size * 1.875;
+        margin-bottom: 0;
+    }
+
+    span {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        display: block;
+        margin-bottom: $spacing-unit/2;
+        font-size: $small-font-size;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
 
 
 /**
@@ -80,6 +112,7 @@ body {
     list-style: none;
     text-align: center;
     margin-left: 0;
+    margin-bottom: $spacing-unit*2;
 
     li {
         display: inline-block;
